@@ -1,0 +1,17 @@
+<div id="chartdiv"></div>
+    <table>
+      <thead>
+        <tr><th colspan="4">Batch logistics</th></tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="batchFailed in batchFailedData">
+          <td>{{$index + 1}}</td>
+          <td>{{batchFailed.Batch.name}}</td>
+          <td>{{batchFailed.Batch.numFailed}}</td>
+          <td>{{batchFailed.Batch.contentSet}}</td>
+          <td>{{batchFailed.Batch.date}}</td>
+          <td>{{batchFailed.Batch.vendor}}</td>
+        </tr>
+      </tbody>
+    </table>
+    
