@@ -18,10 +18,17 @@
 
 </head>
 <body>
+  <div role="tabpanel">
   <ul class="nav nav-tabs" role="tablist">
       <li role="presentation" class="active"><a href="#phones" aria-controls="phones" role="tab" data-toggle="tab">Phones</a></li>
       <li role="presentation"><a href="#hack" aria-controls="hack" role="tab" data-toggle="tab">Hack</a></li>
   </ul>
+  <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="phones">...</div>
+      <div role="tabpanel" class="tab-pane" id="hack">...</div>
+    </div>
+  </div>
     
   <div ng-view></div>
 
