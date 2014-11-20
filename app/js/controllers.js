@@ -109,7 +109,7 @@ phonecatControllers.controller('HackCtrl', ['$scope', '$routeParams', '$http',
 
 	        var options = {
 	          title: 'Batch Failed'
-	        };
+	        };x``
 			
 			var dataToDisplay = google.visualization.arrayToDataTable(arrayToDisplay);
 
