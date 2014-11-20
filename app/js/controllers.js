@@ -21,6 +21,8 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', '$h
     $http.get('phones/' + $routeParams.phoneId + '.json').success(function(data) {
       $scope.phone = data;
       $scope.mainImageUrl = data.images[0];
+      console.log(data);
+      console.log("how did this work");
     });
 
     $scope.setImage = function(imageUrl) {
