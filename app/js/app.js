@@ -11,19 +11,19 @@ var phonecatApp = angular.module('phonecatApp', [
 phonecatApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/phones', {
+      when('/batches', {
         templateUrl: 'partials/phone-list.html',
-        controller: 'PhoneListCtrl'
+        controller: 'BatchesCtrl'
       }).
-      when('/hack', {
+      when('/reports', {
         templateUrl: 'partials/hack.html',
-        controller: 'HackCtrl'
+        controller: 'ReportsCtrl'
       }).
       when('/phones/:phoneId', {
         templateUrl: 'partials/phone-detail.html',
         controller: 'PhoneDetailCtrl'
       }).
       otherwise({
-        redirectTo: '/phones'
+        redirectTo: '/batches'
       });
   }]);

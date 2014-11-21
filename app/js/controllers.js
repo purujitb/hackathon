@@ -7,7 +7,7 @@ google.load('visualization', '1', {
 
 var phonecatControllers = angular.module('phonecatControllers', []);
 
-phonecatControllers.controller('PhoneListCtrl', ['$scope', '$http',
+phonecatControllers.controller('BatchesCtrl', ['$scope', '$http',
   function($scope, $http) {
     $http.get('phones/phones.json').success(function(data) {
       $scope.phones = data;
@@ -21,8 +21,6 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', '$h
     $http.get('phones/' + $routeParams.phoneId + '.json').success(function(data) {
       $scope.phone = data;
       $scope.mainImageUrl = data.images[0];
-      console.log(data);
-      console.log("how did this work");
     });
 
     $scope.setImage = function(imageUrl) {
@@ -30,7 +28,7 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', '$h
     }
   }]);
 
-phonecatControllers.controller('HackCtrl', ['$scope', '$routeParams', '$http',
+phonecatControllers.controller('ReportsCtrl', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
 	  $scope.batchFailedData = [
 	  	{
