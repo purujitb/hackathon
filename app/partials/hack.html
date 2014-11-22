@@ -39,16 +39,16 @@
     <div class="col-md-10">
       <div class="container-fluid">
         <div class="row">
-          <h1 class="page-header">Impact Dashboard</h1>
+          <h1 class="page-header">Impact Dashboard - CFR</h1>
         </div>
         <div class="row">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-3 box">
-                <div id="chartdiv"></div>
+              <div class="col-md-7 box">
+                <div id="areachart"></div>
               </div>
-              <div class="col-md-8 box">
-                <div id="piechart"></div>
+              <div class="col-md-4 box">
+                <div id="chartdiv"></div>
               </div>
             </div>       
           </div>       
@@ -59,6 +59,18 @@
             <tr><th colspan="4">Impact Data</th></tr>
           </thead>
           <tbody>
+            <tr>
+              <th>Impact Id</th>
+              <th>Impact Citation</th>
+              <th>Impact Subsection</th>
+              <th>Impacted Citation</th>
+              <th>Impacted Subsection</th>
+              <th>Expected Date</th>
+              <th>Received Date</th>
+              <th>Bscw WiId</th>
+              <th>Batch Id</th>
+              <th>Batch Zip Name</th>
+            </tr>
 
 
             <tr ng-repeat="impact in impactData">

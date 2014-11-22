@@ -20,9 +20,9 @@ phonecatControllers.controller('HackCtrl', ['$scope', '$routeParams', '$http',
           title: 'My Daily Activities'
       };
 
-      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      // var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-      chart.draw(data, options);
+      // chart.draw(data, options);
 
 
 
@@ -42,13 +42,31 @@ phonecatControllers.controller('HackCtrl', ['$scope', '$routeParams', '$http',
           bars: 'horizontal' // Required for Material Bar Charts.
       };
 
-      var barchart = new google.visualization.BarChart(document.getElementById('barchart'));
+      // var barchart = new google.visualization.BarChart(document.getElementById('barchart'));
 
-      barchart.draw(barData, options);
+      // barchart.draw(barData, options);
 
+      var areaData = google.visualization.arrayToDataTable([
+          ['Month', 'Expected', 'Received On Time'],
+          ['Jan',  70,      75],
+          ['Feb',  80,     80],
+          ['Mar',  90,  100],
+          ['Apr',  84,  100],
+          ['Jun',  90, 95],
+          ['Jul',  100, 120],
+          ['Aug',  50, 50 ],
+          ['Sep',  60, 65],
+          ['Oct',  65, 70]
+        ]);
 
+      var options = {
+          title: 'Impact statistics',
+          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+      };
 
-
+        var areaChart = new google.visualization.AreaChart(document.getElementById('areachart'));
+        areaChart.draw(areaData, options);
 
         // var arrayToDisplay = [];
         // arrayToDisplay.push(["Date", "Failed"]);

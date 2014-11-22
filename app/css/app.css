@@ -10,22 +10,22 @@
 }
 
 .row {
-    padding: 15px;
+    padding: 5px;
   
 }
 
 .box {
   moz-box-shadow: 0 0 2px black;
  -webkit-box-shadow: 0 0 2px black;
- box-shadow: 0 0 2px black;
+ box-shadow: 0 0 3px black;
  -webkit-box-sizing: border-box; 
- padding: 10px;
- margin: 10px;
+ padding: 5px;
+ margin: 5px;
 }
 
 h1 {
--webkit-margin-before: 0.67em;
--webkit-margin-after: 0.67em;
+/*-webkit-margin-before: 0.67em;
+-webkit-margin-after: 0.67em;*/
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;
 
@@ -42,8 +42,8 @@ color: inherit;
 }
 
 .page-header {
-padding-bottom: 9px;
-margin: 40px 0 20px;
+/*padding-bottom: 5px;*/
+/*margin: 40px 0 20px;*/
 border-bottom: 1px solid #C3C3C3;
 }
 

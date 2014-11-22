@@ -1,5 +1,32 @@
 [      
     {
+        "Impact": {"impactId": "154",
+            "impactCitation": "5 FR 12345",
+            "impactSubsection": "1",
+            "impactedCitation": "1 CFR 5",
+            "impactedSubsection": "a",
+            "expectedDate" : "Nov. 19, 2014",
+            "receivedDate" : "",
+            "bscwWiId" : "",
+            "batchId" : "",
+            "batchZipName" : ""
+        }
+    },
+
+    {
+        "Impact": {"impactId": "132",
+            "impactCitation": "5 FR 12345",
+            "impactSubsection": "2",
+            "impactedCitation": "1 CFR 5",
+            "impactedSubsection": "b",
+            "expectedDate" : "Nov. 19, 2014",
+            "receivedDate" : "",
+            "bscwWiId" : "",
+            "batchId" : "",
+            "batchZipName" : ""
+        }
+    },
+    {
         "Impact": {"impactId": "123",
             "impactCitation": "5 FR 12345",
             "impactSubsection": "1",
