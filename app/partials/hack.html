@@ -1,34 +1,64 @@
 <div ng-controller="HackCtrl">
+
+
+
+
   <div class="container-fluid">
     <div class="row">
-    <div class="col-md-8">
-        <table class="table table-striped table-condensed">
-          <thead>
-            <tr><th colspan="4">Impact</th></tr>
-          </thead>
-          <tbody>
+      <div class="col-md-3">
+        <div class="bs-sidebar affix">
 
-
-            <tr ng-repeat="impact in impactData">
-              <td>{{impact.Impact.impactId}}</td>
-              <td>{{impact.Impact.impactCitation}}</td>
-              <td>{{impact.Impact.impactSubsection}}</td>
-              <td>{{impact.Impact.impactedCitation}}</td>
-              <td>{{impact.Impact.impactedSubsection}}</td>
-              <td>{{impact.Impact.expectedDate}}</td>
-              <td>{{impact.Impact.receivedDate}}</td>
-              <td>{{impact.Impact.bscwWiId}}</td>
-              <td>{{impact.Impact.batchId}}</td>
-              <td>{{impact.Impact.batchZipName}}</td>
-            </tr>
-
-          </tbody>
-        </table>
-      </div>
-      <div class="col-md-4">
-        <div id="chartdiv"></div>
-      </div> 
+          <ul class="nav bs-sidenav">
+            <li>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Content Set">
+                </div>
+                <button type="Search" class="btn btn-default">Submit</button>
+              </form>
+            </li>
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-dashboard"></span> Reports</a>
+          <!--
+            <ul class="nav">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+            </ul>
+          </li>
+        -->
+        <li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span> Analytics</a> </li> 
+      </ul>
     </div>
   </div>
+  <div class="col-md-6">
+    <table class="table table-striped table-condensed">
+      <thead>
+        <tr><th colspan="4">Impact</th></tr>
+      </thead>
+      <tbody>
+
+
+        <tr ng-repeat="impact in impactData">
+          <td>{{impact.Impact.impactId}}</td>
+          <td>{{impact.Impact.impactCitation}}</td>
+          <td>{{impact.Impact.impactSubsection}}</td>
+          <td>{{impact.Impact.impactedCitation}}</td>
+          <td>{{impact.Impact.impactedSubsection}}</td>
+          <td>{{impact.Impact.expectedDate}}</td>
+          <td>{{impact.Impact.receivedDate}}</td>
+          <td>{{impact.Impact.bscwWiId}}</td>
+          <td>{{impact.Impact.batchId}}</td>
+          <td>{{impact.Impact.batchZipName}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-3">
+    <div id="chartdiv"></div>
+    <div id="piechart"></div>       
+    <div id="barchart"></div>
+  </div> 
+</div>
+</div>
 
 </div>

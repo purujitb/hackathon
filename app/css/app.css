@@ -1,5 +1,16 @@
 /* app css stylesheet */
 
+/* alex changes */
+.bs-sidebar .nav > .active > ul {
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+
+/* end alex changes */
+
+
 body {
   padding-top: 20px;
 }
