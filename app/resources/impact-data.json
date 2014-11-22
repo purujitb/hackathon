@@ -1,0 +1,74 @@
+[      
+    {
+        "Impact": {"impactId": "123",
+            "impactCitation": "5 FR 12345",
+            "impactSubsection": "1",
+            "impactedCitation": "1 CFR 5",
+            "impactedSubsection": "a",
+            "expectedDate" : "Nov. 19, 2014",
+            "receivedDate" : "Nov. 20, 2014",
+            "bscwWiId" : "123456",
+            "batchId" : "200000000015",
+            "batchZipName" : "cfr_update_20141120-123456.zip"
+        }
+    },
+
+    {
+        "Impact": {"impactId": "124",
+            "impactCitation": "5 FR 12345",
+            "impactSubsection": "2",
+            "impactedCitation": "1 CFR 5",
+            "impactedSubsection": "b",
+            "expectedDate" : "Nov. 19, 2014",
+            "receivedDate" : "Nov. 25, 2014",
+            "bscwWiId" : "123456",
+            "batchId" : "200000000015",
+            "batchZipName" : "cfr_update_20141120-123456.zip"
+        }
+    },
+
+        {
+        "Impact": {"impactId": "125",
+            "impactCitation": "5 FR 12345",
+            "impactSubsection": "3",
+            "impactedCitation": "1 CFR 5",
+            "impactedSubsection": "c",
+            "expectedDate" : "Nov. 19, 2014",
+            "receivedDate" : "Nov. 24, 2014",
+            "bscwWiId" : "123456",
+            "batchId" : "200000000015",
+            "batchZipName" : "cfr_update_20141120-123456.zip"
+        }
+    },
+
+        {
+        "Impact": {"impactId": "126",
+            "impactCitation": "5 FR 12345",
+            "impactSubsection": "4",
+            "impactedCitation": "1 CFR 5",
+            "impactedSubsection": "d",
+            "expectedDate" : "Nov. 19, 2014",
+            "receivedDate" : "Nov. 23, 2014",
+            "bscwWiId" : "123456",
+            "batchId" : "200000000015",
+            "batchZipName" : "cfr_update_20141120-123456.zip"
+        }
+    },
+
+        {
+        "Impact": {"impactId": "127",
+            "impactCitation": "5 FR 12345",
+            "impactSubsection": "5",
+            "impactedCitation": "1 CFR 5",
+            "impactedSubsection": "e",
+            "expectedDate" : "Nov. 19, 2014",
+            "receivedDate" : "Nov. 22, 2014",
+            "bscwWiId" : "123456",
+            "batchId" : "200000000015",
+            "batchZipName" : "cfr_update_20141120-123456.zip"
+        }
+    }
+
+
+
+]
