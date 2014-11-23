@@ -14,8 +14,8 @@
     <div class="col-md-10">
       <!--Body content-->
 
-      <ul>
-        <li ng-repeat="batch in batches | filter:query">
+      <ul class="phones">
+        <li ng-repeat="batch in batches | filter:query | orderBy:orderProp">
           <a>{{batch.name}}</a>
           <p>Content Set: {{batch.contentSet}}
           <br/>Failed Count: {{batch.numFailed}}

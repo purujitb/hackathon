@@ -21,6 +21,8 @@ phonecatControllers.controller('Batches2Ctrl', ['$scope', '$http',
     $http.get('phones/phones.json').success(function(data) {
       $scope.batches = data;
     });
+    
+    $scope.orderProp = 'numFailed';
   }]);
   
 phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', '$http',
