@@ -12,8 +12,8 @@ phonecatApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/batches', {
-        templateUrl: 'partials/phone-list.html',
-        controller: 'BatchesCtrl'
+        templateUrl: 'partials/batch-list.html',
+        controller: 'Batches2Ctrl'
       }).
       when('/reports', {
         templateUrl: 'partials/hack.html',

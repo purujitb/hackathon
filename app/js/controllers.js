@@ -16,6 +16,13 @@ phonecatControllers.controller('BatchesCtrl', ['$scope', '$http',
     $scope.orderProp = 'age';
   }]);
 
+phonecatControllers.controller('Batches2Ctrl', ['$scope', '$http',
+  function($scope, $http) {
+    $http.get('phones/phones.json').success(function(data) {
+      $scope.batches = data;
+    });
+  }]);
+  
 phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
     $http.get('phones/' + $routeParams.phoneId + '.json').success(function(data) {

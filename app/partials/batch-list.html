@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      Search: <input ng-model="query">
+      Sort by:
+      <select ng-model="orderProp">
+        <option value="numFailed">Failed Count</option>
+        <option value="contentSet">Content Set</option>
+      </select>
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul>
+        <li ng-repeat="batch in batches | filter:query">
+          <a>{{batch.name}}</a>
+          <p>Content Set: {{batch.contentSet}}
+          <br/>Failed Count: {{batch.numFailed}}
+          <br/>Date: {{batch.date}}
+          <br/>Vendor: {{batch.vendor}}</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
